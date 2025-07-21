@@ -1,5 +1,5 @@
-﻿using ReservationService.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using ReservationService.Models;
 
 namespace ReservationService.Infrastructure;
 

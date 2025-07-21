@@ -21,7 +21,7 @@ public class Product
         if (quantity <= 0)
             throw new ArgumentException("quantity must be positive");
 
-        if (Stock < quantity) 
+        if (Stock < quantity)
             return false;
 
         Stock -= quantity;

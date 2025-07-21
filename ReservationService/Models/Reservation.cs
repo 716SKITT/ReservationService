@@ -6,6 +6,7 @@ public class Reservation
     public Guid ProductId { get; private set; }
     public Product Product { get; private set; } = null!;
     public int Quantity { get; private set; }
+    public DateTime ReservedAt { get; private set; }
 
     public Reservation(int quantity, Product product)
     {
@@ -16,6 +17,7 @@ public class Reservation
         Quantity = quantity;
         Product = product;
         ProductId = product.Id;
+        ReservedAt = DateTime.UtcNow;
     }
 
     private Reservation() { }
